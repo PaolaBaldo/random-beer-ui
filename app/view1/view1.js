@@ -18,7 +18,7 @@ angular.module('myApp.view1', ['ngRoute'])
       method: 'GET',
       url: 'http://localhost:8080/beers/random'
     }).then(function successCallback(response) {
-    	$scope.greeting = response.data;
+    	$scope.beer = response.data;
        // this callback will be called asynchronously
        // when the response is available
     }, function errorCallback(response) {

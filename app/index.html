@@ -25,23 +25,23 @@
 
   <div>The Random Beer App</div>
     
-    <div ng-controller="View1Ctrl as hello" data-ng-init="performCall()">
+    <div ng-controller="View1Ctrl as ctrl" data-ng-init="performCall()">
       <button class="btn" ng-click="performCall()">Show Another Beer</button>
        
-      <h1>{{greeting.name}}</h1>
-      <p>{{greeting.description}}</p>
+      <h1>{{beer.name}}</h1>
+      <p>{{beer.description}}</p>
       <ul class="specs">
   
   <li>
     <span>The brewery location</span>
     <dl>
-      <dd>{{greeting.breweryLocation}}</dd>
+      <dd>{{beer.breweryLocation}}</dd>
     </dl>
   </li>
   <li>
     <span>The alcohol percentage</span>
     <dl>
-      <dd>{{greeting.abv}}%</dd>
+      <dd>{{beer.abv}}%</dd>
     </dl>
   </li>
   
